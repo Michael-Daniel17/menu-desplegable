@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #111;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #222;
+    border-bottom: 1px solid #383838;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+nav i {
+    padding-left: 10px;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+nav img {
+    margin-left: 20px;
+}
+
+.primer-contenedor,
+.segundo-contenedor  {
+    border-bottom: 1px solid #383838;
+    padding-bottom: 10px;
+}
+
+.tercer-contenedor {
+    padding-bottom: 20px;
+}
+
+.tercer-contenedor h3 {
+    padding: 15px 0 15px 20px ;
+    font-size: 1rem;
+    color: #e7e7e7;
+}
+
+.menu-desplegable {
+    height: 100vh;
+    width: 280px;
+    padding-top: 10px;
+    background-color: #222;
+    color: #e7e7e7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom:0;
+    overflow-y: hidden;
+    margin-top: 60px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-desplegable:hover{
+    overflow-y: auto;
+}
+
+.menu-desplegable div {
+    padding:  13px 20px 13px 20px;
+    padding-left: 20px;
+}
+
+.menu-desplegable div:hover {
+    background-color: #333;
+    cursor: pointer;
+}
+
+.menu-desplegable div {
+    display: flex;
+    align-items: center;
+}
+.menu-desplegable section span {
+    margin-left: 10px;
+}
+
+.menu-desplegable::-webkit-scrollbar{
+    width: 8px;
+}
+
+.menu-desplegable::-webkit-scrollbar-thumb{
+    background-color: #909090;
+    border-radius: 5px;
+}
+
+/*DESPLEGAR MENÚ CON CSS*/
+.menu-desplegable.active {
+    transform: translate(-100%);
+    transition: all .5s ease-in-out;
+}
+
+
+
